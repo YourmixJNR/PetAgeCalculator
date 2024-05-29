@@ -1,0 +1,137 @@
+:root {
+    --lightest: #EEE9DA;
+    --light: #BDCDD6;
+    --dark: #93BFCF;
+    --darkest: #6096B4;
+    --text: #1d1b1b;
+}
+
+/* CSS Reset */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* End of CSS Reset */
+
+/* rest of stylesheet */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: var(--darkest);
+    color: var(--text);
+}
+
+.content {
+    text-align: justify;
+    max-width: 400px;
+    margin: auto;
+    justify-content: flex-start;
+}
+
+.content h3 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--dark);
+    max-width: 400px;
+    /* Set the maximum width of the container */
+    height: auto;
+    /* Set the height of the container to auto */
+    margin: auto;
+    margin-top: 10rem;
+    border-radius: 1em;
+}
+
+h1 {
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+.attribution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    /* Set the maximum width of the container */
+    height: auto;
+    /* Set the height of the container to auto */
+    margin: auto;
+    background-color: var(--dark);
+    color: var(--text);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 1em;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.results {
+    margin-bottom: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: var(--lightest);
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid var(--darkest);
+    background-color: var(--dark);
+}
+
+th {
+    background-color: var(--darkest);
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: var(--lightest);
+}
+
+.hiddenDiv {
+    display: none;
+    transition: all 0.5s ease-in-out;
+    /* Add transition effect to all properties */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hiddenDiv.show {
+    display: block;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    /* Add transition effect to all properties */
+}
+
+/* Classes to show or hide smallDog Div */
+.results+#smallDog {
+    display: none;
+}
+
+.results.showSmall+#smallDog {
+    display: block;
+}
+
+input {
+    background-color: var(--darkest);
+    color: var(--text);
+}
